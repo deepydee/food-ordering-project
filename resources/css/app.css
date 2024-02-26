@@ -30,4 +30,15 @@
     .text-link {
         @apply text-blue-600 hover:underline;
     }
+
+    .form-group {
+        @apply flex flex-col gap-2
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        @apply disabled:opacity-50;
+    }
 }
