@@ -35,6 +35,7 @@ class HandleInertiaRequests extends Middleware
                 'user' => $request->user(),
             ],
             'status' => session('status'),
+            'permissions' => $request->user()?->permissions() ?? [],
         ];
     }
 }
