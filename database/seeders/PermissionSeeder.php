@@ -36,5 +36,7 @@ class PermissionSeeder extends Seeder
             ->each(fn (string $permission) => Permission::create([
                 'name' => $permission,
             ]));
+
+        Permission::create(['name' => 'cart.add']);
     }
 }
