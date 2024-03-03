@@ -5,7 +5,7 @@ export const Can = {
         const page = usePage();
 
         const can = (permission) => {
-            return page.props.permissions.includes(permission);
+            return page.props.auth.permissions.includes(permission);
         };
 
         v.mixin({
